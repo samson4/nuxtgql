@@ -1,0 +1,9 @@
+query MyQuery {
+  profile {
+    id
+    name
+    phone
+    email
+    description
+  }
+}

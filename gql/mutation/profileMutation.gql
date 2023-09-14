@@ -1,0 +1,17 @@
+mutation ProfileMutation($objects:[profile_insert_input!]!) {
+  insert_profile(objects:$objects ) {
+    returning {
+      id
+      name
+      phone
+      email
+      description
+    }
+  }
+}
+
+mutation ProfileDeleteMutation($id:Int!) {
+  delete_profile_by_pk(id: $id) {
+    id
+  }
+}
